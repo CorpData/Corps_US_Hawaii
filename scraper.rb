@@ -1,3 +1,4 @@
+require 'scraperwiki'
 #encoding: ISO-8859-1
 require 'nokogiri'
 require 'mechanize'
@@ -88,7 +89,7 @@ def action(srch)
 end
 
 
-#puts ScraperWiki.sqliteexecute("delete from swdata where record_type like 'Trade%' or record_type like 'Temporary%' or record_type == 'Name Reservation'")
+#puts ScraperWiki.sqliteexecute("delete from data where record_type like 'Trade%' or record_type like 'Temporary%' or record_type == 'Name Reservation'")
 #puts ScraperWiki.commit()
 #save_metadata("OFFSET",477)
 range = (0..10).to_a + ('A0'..'Z9').to_a + ('AAA'..'ZZZ').to_a
